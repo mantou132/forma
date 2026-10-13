@@ -1,0 +1,20 @@
+[package]
+name = "forma-lattice"
+version = "0.1.0"
+description = "Forma 形 · Lattice"
+authors = ["mantou132"]
+edition = "2024"
+
+[lib]
+# The `_lib` suffix keeps the lib name distinct from the bin name (cargo#8519)
+name = "forma_lattice_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+
+[target.'cfg(any(target_os = "android", target_os = "ios"))'.dependencies]
+tauri-plugin-haptics = "2"

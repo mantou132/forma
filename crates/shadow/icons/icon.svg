@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 -80 160 160" width="1024" height="1024">
+  <title>Forma Shadow app icon</title>
+  <defs>
+    <radialGradient id="g" cx="50%" cy="48%" r="62%">
+      <stop offset="0" stop-color="#5a3510" />
+      <stop offset=".7" stop-color="#1a1222" />
+      <stop offset="1" stop-color="#0B0C14" />
+    </radialGradient>
+  </defs>
+  <rect x="-80" y="-80" width="160" height="160" fill="url(#g)" />
+  <g transform="translate(0,2)">
+    <polygon points="0.0,0 -51.96,30 -51.96,-30 0.0,-60" fill="#191a33" />
+    <polygon points="0.0,0 51.96,30 51.96,-30 0.0,-60" fill="#15162c" />
+    <polygon points="0.0,0 51.96,30 0.0,60 -51.96,30" fill="#1e1f3c" />
+    <g transform="matrix(-17.32 10 0 -20 0 0)"><circle cx="1.5" cy="1.5" r="0.95" fill="#f5b65b" opacity=".9" /></g>
+    <g transform="matrix(17.32 10 0 -20 0 0)">
+      <rect x="0.55" y="0.55" width="1.9" height="1.9" fill="#f5b65b" opacity=".75" />
+    </g>
+    <g transform="matrix(17.32 10 -17.32 10 0 0)">
+      <polygon points="0.55,2.45 2.45,2.45 1.5,0.55" fill="#f5b65b" opacity=".6" />
+    </g>
+    <polygon points="0.0,-20.0 17.32,-10.0 0.0,0.0 -17.32,-10.0" fill="#fff6e6" />
+    <polygon points="17.32,10.0 0.0,20.0 0.0,0.0 17.32,-10.0" fill="#e2c391" />
+    <polygon points="-17.32,10.0 0.0,20.0 0.0,0.0 -17.32,-10.0" fill="#b4874c" />
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "lattice",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["-C", "packages/lattice", "dev"],
+      "port": 1430
+    },
+    {
+      "name": "shadow",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["-C", "packages/shadow", "dev"],
+      "port": 1431
+    }
+  ]
+}

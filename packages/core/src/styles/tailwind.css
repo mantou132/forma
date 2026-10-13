@@ -1,0 +1,62 @@
+@import "tailwindcss/theme";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+
+/* Core elements live outside the game package, so scan them explicitly */
+@source "../";
+
+@theme {
+  --color-ink: #0b0c14;
+  --color-card: #14162a;
+  --color-card-strong: #1a1d44;
+  --color-text: #ecedf5;
+  --color-soft: #c9cbe0;
+  --color-muted: #9094ae;
+  --color-dim: #5d6180;
+  --color-line: rgb(236 237 245 / 0.08);
+  --color-glass: rgb(236 237 245 / 0.06);
+  --color-glass-strong: rgb(236 237 245 / 0.12);
+  --color-accent: var(--game-accent);
+  --color-accent-soft: var(--game-accent-soft);
+  --color-accent-deep: var(--game-accent-deep);
+  --font-sans: "Geist Variable", system-ui, -apple-system, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+  --font-mark: "Noto Serif SC", "Songti SC", "STSong", "Source Han Serif SC", serif;
+  --ease-spring: cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+:root {
+  --safe-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
+  --safe-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
+  color-scheme: dark;
+  background: var(--color-ink);
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@utility pt-safe {
+  padding-top: calc(var(--safe-top) + 16px);
+}
+
+@utility pb-safe {
+  padding-bottom: calc(var(--safe-bottom) + 20px);
+}
+
+@utility label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+@utility glow-point {
+  filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 7px color-mix(in srgb, var(--game-accent) 80%, white));
+}

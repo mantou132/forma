@@ -1,0 +1,91 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="-80 -84 160 160"
+  width="1024"
+  height="1024"
+  role="img"
+  aria-label="Forma Lattice app icon, full-bleed 1024 by 1024 export; the App Store applies the corner mask"
+>
+  <title>Forma Lattice app icon</title>
+  <style>
+  svg {
+    --ft: #eef0ff;
+    --fr: #7b86ff;
+    --fl: #363cb8;
+    --edge: rgba(8, 9, 30, 0.5);
+    --ew: 0.5;
+  }
+  .pt {
+    filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 7px rgba(160, 170, 255, 0.95));
+  }
+  </style>
+  <defs>
+    <radialGradient id="glw" cx="50%" cy="45%" r="62%">
+      <stop offset="0" stop-color="#2A2F7A"></stop>
+      <stop offset=".7" stop-color="#11132A"></stop>
+      <stop offset="1" stop-color="#0B0C14"></stop>
+    </radialGradient>
+    <polygon
+      id="t"
+      points="0,-20 17.32,-10 0,0 -17.32,-10"
+      style="fill:var(--ft);stroke:var(--edge);stroke-width:var(--ew);stroke-linejoin:round"
+    ></polygon>
+    <polygon
+      id="r"
+      points="17.32,-10 17.32,10 0,20 0,0"
+      style="fill:var(--fr);stroke:var(--edge);stroke-width:var(--ew);stroke-linejoin:round"
+    ></polygon>
+    <polygon
+      id="l"
+      points="-17.32,-10 0,0 0,20 -17.32,10"
+      style="fill:var(--fl);stroke:var(--edge);stroke-width:var(--ew);stroke-linejoin:round"
+    ></polygon>
+    <g id="c">
+      <use href="#t"></use>
+      <use href="#r"></use>
+      <use href="#l"></use>
+    </g>
+  </defs>
+  <rect x="-80" y="-84" width="160" height="160" fill="url(#glw)"></rect>
+  <g transform="translate(0,-4)">
+    <use href="#r" x="-17.32" y="-10"></use>
+    <use href="#r" x="-17.32" y="-30"></use>
+    <use href="#r" x="-17.32" y="-50"></use>
+    <use href="#r" x="-34.64" y="0"></use>
+    <use href="#r" x="-34.64" y="-20"></use>
+    <use href="#r" x="-34.64" y="-40"></use>
+    <use href="#r" x="-51.96" y="10"></use>
+    <use href="#r" x="-51.96" y="-10"></use>
+    <use href="#r" x="-51.96" y="-30"></use>
+    <use href="#l" x="17.32" y="-10"></use>
+    <use href="#l" x="17.32" y="-30"></use>
+    <use href="#l" x="17.32" y="-50"></use>
+    <use href="#l" x="34.64" y="0"></use>
+    <use href="#l" x="34.64" y="-20"></use>
+    <use href="#l" x="34.64" y="-40"></use>
+    <use href="#l" x="51.96" y="10"></use>
+    <use href="#l" x="51.96" y="-10"></use>
+    <use href="#l" x="51.96" y="-30"></use>
+    <use href="#t" x="0" y="20"></use>
+    <use href="#t" x="-17.32" y="30"></use>
+    <use href="#t" x="-34.64" y="40"></use>
+    <use href="#t" x="17.32" y="30"></use>
+    <use href="#t" x="0" y="40"></use>
+    <use href="#t" x="-17.32" y="50"></use>
+    <use href="#t" x="34.64" y="40"></use>
+    <use href="#t" x="17.32" y="50"></use>
+    <use href="#t" x="0" y="60"></use>
+    <use href="#c" x="0" y="0"></use>
+    <use href="#c" x="-17.32" y="10"></use>
+    <use href="#c" x="17.32" y="10"></use>
+    <use href="#c" x="0" y="-20"></use>
+    <use href="#c" x="-34.64" y="20"></use>
+    <use href="#c" x="0" y="20"></use>
+    <use href="#c" x="34.64" y="20"></use>
+    <use href="#c" x="-17.32" y="-10"></use>
+    <use href="#c" x="17.32" y="-10"></use>
+    <use href="#c" x="0" y="-40"></use>
+    <circle class="pt" cx="0" cy="-50" r="3" fill="#FFFFFF"></circle>
+  </g>
+</svg>

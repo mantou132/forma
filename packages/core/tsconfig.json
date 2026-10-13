@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "noEmit": true
+  },
+  "include": ["./", "../lattice/src/auto-import.d.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,9 @@
+packages:
+  - packages/*
+
+# swc-plugin-gem is a Wasm plugin tied to the host swc_core; keep Rspack on a compatible version
+overrides:
+  swc-plugin-gem: 0.1.18-beta
+  '@rspack/core': 2.1.8
+  '@swc/core': 1.15.47
+  unplugin: 3.3.0

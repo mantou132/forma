@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Forma Lattice",
+  "version": "0.1.0",
+  "identifier": "com.mantou.forma.lattice",
+  "build": {
+    "beforeDevCommand": "pnpm -C packages/lattice dev",
+    "devUrl": "http://localhost:1430",
+    "beforeBuildCommand": "pnpm -C packages/lattice build",
+    "frontendDist": "../../packages/lattice/dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Forma 形 · Lattice",
+        "width": 430,
+        "height": 860,
+        "minWidth": 360,
+        "minHeight": 640,
+        "center": true,
+        "backgroundColor": "#0b0c14"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"]
+  }
+}
