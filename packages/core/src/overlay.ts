@@ -8,6 +8,7 @@ type Solved = {
   moves: number;
   par?: number;
   best: number;
+  unit: Unit;
   /** Newly collected card */
   card?: string;
 };
@@ -24,18 +25,22 @@ export const overlayStore = createStore({
 
 export const closeOverlay = () => overlayStore({ solved: undefined, insight: undefined });
 
+/** Singular and plural of what the score counts */
+export type Unit = [string, string];
+
 type SolveOptions = {
   moves: number;
   /** Fewest moves possible; shown so players know when they found the clean solution */
   par?: number;
+  unit?: Unit;
 };
 
-export const solveLevel = (ref: LevelRef, { moves, par }: SolveOptions) => {
+export const solveLevel = (ref: LevelRef, { moves, par, unit = ['move', 'moves'] }: SolveOptions) => {
   const info = getGame().chapters[ref.chapter].levels[ref.level];
   const card = recordSolve(info.id, moves, info.card);
   sound.solve();
   haptic.success();
-  overlayStore({ solved: { ref, moves, par, best: progressStore.solved[info.id], card } });
+  overlayStore({ solved: { ref, moves, par, best: progressStore.solved[info.id], card, unit } });
 };
 
 /**

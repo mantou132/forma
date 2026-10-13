@@ -13,7 +13,8 @@
 - `packages/core/`：系列共享层（`@forma/core`）：标题 / 章节 / 关卡列表 / 定理卡页面、过关与顿悟浮层、维度切换手势、音效、触感、进度存储、共享 Rsbuild 配置。详情参见 [`packages/core/CLAUDE.md`](packages/core/CLAUDE.md)。
 - `packages/lattice/`：形·铺（Lattice，2D → 3D）：菱形铺砖其实是墙角里的立方体堆。详情参见 [`packages/lattice/CLAUDE.md`](packages/lattice/CLAUDE.md)。
 - `packages/shadow/`：形·影（Shadow，3D → 2D）：一个物体同时投出三个影子，正对轴线看时深度消失。详情参见 [`packages/shadow/CLAUDE.md`](packages/shadow/CLAUDE.md)。
-- `crates/lattice/`、`crates/shadow/`：各作的 Tauri 2 原生入口（`com.mantou.forma.<game>`）；`icons/icon.svg` 为图标源文件，其余图标由 `pnpm tauri:<game> icon` 生成。
+- `packages/time/`：形·时（Time，2D+t → 3D）：路线在地图上交叉，在时空里是不是真的相遇要看高度。详情参见 [`packages/time/CLAUDE.md`](packages/time/CLAUDE.md)。
+- `crates/lattice/`、`crates/shadow/`、`crates/time/`：各作的 Tauri 2 原生入口（`com.mantou.forma.<game>`）；`icons/icon.svg` 为图标源文件，其余图标由 `pnpm tauri:<game> icon` 生成。
 - `biome.json`：代码风格格式化与 Lint 配置。
 
 # 系列约束
@@ -22,7 +23,7 @@
 - **统一手势**：倾斜手机是全系列的"换维度"手势（`core/tilt.ts`），每个界面同时提供按钮。第一章只有一个维度，第二章开放换维度；第一次换维度触发系列统一的顿悟浮层与音效（`discoverShift`）。
 - **定理卡**：卡片注册在 `core/cards.ts`（全系列共用，ID 以游戏名为前缀），由关卡配置的 `card` 或 `discoverShift` 解锁；其他作品的卡显示为灰色。
 - **关卡可验证**：关卡数据在各作 `src/model/levels.ts`，pars、可解性与不可能性由该作 `test/` 中的求解器校验；改关卡必须跑测试。
-- **视觉**：底色 `#0b0c14`，Geist / Geist Mono，形 字标用宋体系；每作一个主色（Lattice 靛蓝、Shadow 琥珀），由 `FormaGame.accent` 注入。
+- **视觉**：底色 `#0b0c14`，Geist / Geist Mono，形 字标用宋体系；每作一个主色（Lattice 靛蓝、Shadow 琥珀、Time 青绿），由 `FormaGame.accent` 注入。
 
 # 前端开发（Gem 规范）
 
@@ -36,7 +37,7 @@
 
 # 常用命令
 
-- `pnpm -C packages/<game> dev` / `build`：开发服务器（Lattice 1430、Shadow 1431）/ 生产打包。
+- `pnpm -C packages/<game> dev` / `build`：开发服务器（Lattice 1430、Shadow 1431、Time 1432）/ 生产打包。
 - `pnpm -r test`：各作模型与关卡测试。
 - `pnpm run lint`：Biome + 各包 `tsc --noEmit`。
 - `cargo check`：Rust Workspace 检查（需要先 build 前端产物）。

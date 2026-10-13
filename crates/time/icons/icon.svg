@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 -80 160 160" width="1024" height="1024">
+  <title>Forma Time app icon</title>
+  <defs>
+    <radialGradient id="g" cx="50%" cy="45%" r="62%">
+      <stop offset="0" stop-color="#174f4a" />
+      <stop offset=".7" stop-color="#101626" />
+      <stop offset="1" stop-color="#0B0C14" />
+    </radialGradient>
+  </defs>
+  <rect x="-80" y="-80" width="160" height="160" fill="url(#g)" />
+  <g transform="translate(-7,15)">
+    <polygon points="-3.5,-6 53.5,12 17.5,45 -39.5,27" fill="#262b56" />
+    <line x1="15.5" y1="0" x2="-20.5" y2="33" stroke="#0b0c14" stroke-width="1.1" />
+    <line x1="-15.5" y1="5" x2="41.5" y2="23" stroke="#0b0c14" stroke-width="1.1" />
+    <line x1="34.5" y1="6" x2="-1.5" y2="39" stroke="#0b0c14" stroke-width="1.1" />
+    <line x1="-27.5" y1="16" x2="29.5" y2="34" stroke="#0b0c14" stroke-width="1.1" />
+    <line
+      x1="-3.5"
+      y1="-6"
+      x2="-3.5"
+      y2="-75.3"
+      stroke="#62e0c9"
+      stroke-width="0.7"
+      opacity="0.45"
+      stroke-linecap="round"
+    />
+    <line
+      x1="53.5"
+      y1="12"
+      x2="53.5"
+      y2="-57.3"
+      stroke="#62e0c9"
+      stroke-width="0.7"
+      opacity="0.45"
+      stroke-linecap="round"
+    />
+    <line
+      x1="-39.5"
+      y1="27"
+      x2="-39.5"
+      y2="-42.3"
+      stroke="#62e0c9"
+      stroke-width="0.7"
+      opacity="0.45"
+      stroke-linecap="round"
+    />
+    <line
+      x1="-3.5"
+      y1="-75.3"
+      x2="53.5"
+      y2="-57.3"
+      stroke="#62e0c9"
+      stroke-width="0.7"
+      opacity="0.45"
+      stroke-linecap="round"
+    />
+    <line
+      x1="-39.5"
+      y1="-42.3"
+      x2="-3.5"
+      y2="-75.3"
+      stroke="#62e0c9"
+      stroke-width="0.7"
+      opacity="0.45"
+      stroke-linecap="round"
+    />
+    <polygon points="-3.5,-75.3 53.5,-57.3 17.5,-24.3 -39.5,-42.3" fill="#62e0c9" opacity=".07" />
+    <polygon points="4.55,13.55 17.85,17.75 9.45,25.45 -3.85,21.25" fill="#62e0c9" opacity=".4" />
+    <line
+      x1="7.0"
+      y1="19.5"
+      x2="7.0"
+      y2="-49.8"
+      stroke="#ffffff"
+      stroke-width="0.8"
+      opacity="0.4"
+      stroke-linecap="round"
+      stroke-dasharray="2 2.5"
+    />
+    <path
+      d="M19.0,6.82 L19.0,-18.8 L7.0,-24.6 L-5.0,-30.4"
+      fill="none"
+      stroke="#ef6f6c"
+      stroke-width="3.6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M-12.0,11.82 L7.0,1.65 L26.0,-8.1"
+      fill="none"
+      stroke="#f4c95d"
+      stroke-width="3.6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <circle cx="19.0" cy="6.82" r="3.8" fill="#ef6f6c" />
+    <circle cx="-5.0" cy="-30.4" r="3" fill="#fff" />
+    <circle cx="-12.0" cy="11.82" r="3.8" fill="#f4c95d" />
+    <circle cx="26.0" cy="-8.1" r="3" fill="#fff" />
+    <line
+      x1="17.5"
+      y1="45"
+      x2="17.5"
+      y2="-24.3"
+      stroke="#62e0c9"
+      stroke-width="0.8"
+      opacity="0.6"
+      stroke-linecap="round"
+    />
+    <line
+      x1="53.5"
+      y1="-57.3"
+      x2="17.5"
+      y2="-24.3"
+      stroke="#62e0c9"
+      stroke-width="0.8"
+      opacity="0.6"
+      stroke-linecap="round"
+    />
+    <line
+      x1="17.5"
+      y1="-24.3"
+      x2="-39.5"
+      y2="-42.3"
+      stroke="#62e0c9"
+      stroke-width="0.8"
+      opacity="0.6"
+      stroke-linecap="round"
+    />
+  </g>
+</svg>

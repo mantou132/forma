@@ -7,6 +7,7 @@
     "test": "lerna exec -- npm test",
     "tauri:lattice": "TAURI_APP_PATH=crates/lattice tauri",
     "tauri:shadow": "TAURI_APP_PATH=crates/shadow tauri",
+    "tauri:time": "TAURI_APP_PATH=crates/time tauri",
     "prepare": "husky install"
   },
   "devDependencies": {

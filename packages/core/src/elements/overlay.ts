@@ -101,7 +101,7 @@ export class FormaOverlayElement extends GemElement {
       `;
     }
     if (solved) {
-      const { ref, moves, par, best, card } = solved;
+      const { ref, moves, par, best, card, unit } = solved;
       const clean = par !== undefined && moves <= par;
       return html`
         <div class="fade fixed inset-0 z-50 flex flex-col justify-end bg-[linear-gradient(transparent_25%,#0b0c14f2_58%)]">
@@ -109,7 +109,7 @@ export class FormaOverlayElement extends GemElement {
             <div class="flex items-end justify-between">
               <div class="flex flex-col gap-1">
                 <span class="label text-accent">${clean ? 'Solved · Perfect' : 'Solved'}</span>
-                <span class="text-[34px] font-medium leading-none tracking-tight">${moves} ${moves === 1 ? 'move' : 'moves'}</span>
+                <span class="text-[34px] font-medium leading-none tracking-tight">${moves} ${unit[moves === 1 ? 0 : 1]}</span>
               </div>
               <div class="flex flex-col items-end gap-1 font-mono text-xs text-muted">
                 ${par === undefined ? null : html`<span>Fewest ${par}</span>`}

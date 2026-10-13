@@ -1,0 +1,26 @@
+{
+  "name": "@forma/time",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview",
+    "test": "node --test --test-timeout=120000 test/*.test.ts"
+  },
+  "dependencies": {
+    "@forma/core": "workspace:*",
+    "@mantou/gem": "^2.2.14",
+    "@mantou/tap-ui": "^0.1.14",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "2.1.10",
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/three": "^0.186.0",
+    "postcss": "^8.5.14",
+    "tailwindcss": "^4.3.0",
+    "unplugin-gem": "0.1.11"
+  }
+}

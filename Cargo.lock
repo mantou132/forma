@@ -840,6 +840,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "forma-time"
+version = "0.1.0"
+dependencies = [
+ "tauri",
+ "tauri-build",
+ "tauri-plugin-haptics",
+]
+
+[[package]]
 name = "futures-channel"
 version = "0.3.34"
 source = "registry+https://github.com/rust-lang/crates.io-index"

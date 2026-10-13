@@ -12,6 +12,12 @@
       "runtimeExecutable": "pnpm",
       "runtimeArgs": ["-C", "packages/shadow", "dev"],
       "port": 1431
+    },
+    {
+      "name": "time",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["-C", "packages/time", "dev"],
+      "port": 1432
     }
   ]
 }

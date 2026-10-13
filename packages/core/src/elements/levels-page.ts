@@ -37,7 +37,7 @@ export class FormaLevelsPageElement extends GemElement {
                 <span class="text-xl font-medium ${open ? 'text-text' : 'text-dim'}">${String(level + 1).padStart(2, '0')}</span>
                 ${
                   solved
-                    ? html`<span class="font-mono text-[10px] text-accent">${moves} moves</span>`
+                    ? html`<span class="font-mono text-[10px] text-accent">Best ${moves}</span>`
                     : open
                       ? null
                       : html`<span class="text-dim [&_svg]:size-3.5">${icons.lock}</span>`

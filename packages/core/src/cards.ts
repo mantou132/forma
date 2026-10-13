@@ -2,6 +2,7 @@
 export const SERIES = [
   { id: 'lattice', name: 'Lattice', zh: '铺', jump: '2D → 3D' },
   { id: 'shadow', name: 'Shadow', zh: '影', jump: '3D → 2D' },
+  { id: 'time', name: 'Time', zh: '时', jump: '2D+t → 3D' },
   { id: 'knot', name: 'Knot', zh: '结', jump: '2D → 3D' },
   { id: 'cone', name: 'Cone', zh: '锥', jump: '3D ∩ 2D' },
   { id: 'quasicrystal', name: 'Quasicrystal', zh: '晶', jump: '5D → 2D' },
@@ -89,6 +90,42 @@ export const CARDS: TheoremCard[] = [
     game: 'shadow',
     title: '形',
     text: 'A sculpture that only means something from one side.',
+  },
+  {
+    id: 'time-worldline',
+    game: 'time',
+    title: 'Worldlines',
+    text: 'A moving dot is a still line in spacetime. Time is just one more direction.',
+  },
+  {
+    id: 'time-crossing',
+    game: 'time',
+    title: 'Crossing',
+    text: 'Paths that cross on the map only meet if they cross at the same height in time.',
+  },
+  {
+    id: 'time-braid',
+    game: 'time',
+    title: 'Braids',
+    text: 'Dots that dance around each other weave a braid. The order they pass in is its shape.',
+  },
+  {
+    id: 'time-order',
+    game: 'time',
+    title: 'Who Goes First',
+    text: 'In a single lane, order is everything: one worldline has to pass above the other.',
+  },
+  {
+    id: 'time-patrol',
+    game: 'time',
+    title: 'Still Walls',
+    text: 'A patrol moving through time is a fixed wall in spacetime. You only have to find the gap.',
+  },
+  {
+    id: 'time-form',
+    game: 'time',
+    title: '形',
+    text: 'Seen from above, a street map. Seen through time, a sculpture.',
   },
 ];
 
