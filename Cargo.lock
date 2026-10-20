@@ -827,6 +827,7 @@ version = "0.1.0"
 dependencies = [
  "tauri",
  "tauri-build",
+ "tauri-plugin-edge-to-edge",
  "tauri-plugin-haptics",
 ]
 
@@ -836,6 +837,7 @@ version = "0.1.0"
 dependencies = [
  "tauri",
  "tauri-build",
+ "tauri-plugin-edge-to-edge",
  "tauri-plugin-haptics",
 ]
 
@@ -845,6 +847,7 @@ version = "0.1.0"
 dependencies = [
  "tauri",
  "tauri-build",
+ "tauri-plugin-edge-to-edge",
  "tauri-plugin-haptics",
 ]
 
@@ -3181,6 +3184,17 @@ dependencies = [
  "serde_json",
  "tauri-utils",
  "walkdir",
+]
+
+[[package]]
+name = "tauri-plugin-edge-to-edge"
+version = "0.3.3"
+source = "git+https://github.com/mantou132/tauri-plugin-edge-to-edge#7bb1aa9efa37e526a05c9684e2cca2bdd1ae0480"
+dependencies = [
+ "serde",
+ "tauri",
+ "tauri-plugin",
+ "thiserror 2.0.21",
 ]
 
 [[package]]

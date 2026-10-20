@@ -5,9 +5,9 @@
   "scripts": {
     "lint": "biome check --write && lerna exec -- tsc --noEmit",
     "test": "lerna exec -- npm test",
-    "tauri:lattice": "TAURI_APP_PATH=crates/lattice tauri",
-    "tauri:shadow": "TAURI_APP_PATH=crates/shadow tauri",
-    "tauri:time": "TAURI_APP_PATH=crates/time tauri",
+    "tauri:lattice": "TAURI_APP_PATH=$PWD/crates/lattice CARGO_TARGET_DIR=$PWD/target/lattice tauri",
+    "tauri:shadow": "TAURI_APP_PATH=$PWD/crates/shadow CARGO_TARGET_DIR=$PWD/target/shadow tauri",
+    "tauri:time": "TAURI_APP_PATH=$PWD/crates/time CARGO_TARGET_DIR=$PWD/target/time tauri",
     "prepare": "husky install"
   },
   "devDependencies": {

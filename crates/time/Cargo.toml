@@ -18,3 +18,4 @@ tauri = { version = "2", features = [] }
 
 [target.'cfg(any(target_os = "android", target_os = "ios"))'.dependencies]
 tauri-plugin-haptics = "2"
+tauri-plugin-edge-to-edge = { git = "https://github.com/mantou132/tauri-plugin-edge-to-edge" }

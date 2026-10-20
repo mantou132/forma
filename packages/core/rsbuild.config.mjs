@@ -13,6 +13,10 @@ export const defineGameConfig = ({ root, port }) =>
   defineConfig(({ command }) => ({
     html: {
       template: './index.html',
+      // 内容铺满刘海与 home 指示条区域，安全区由 core 样式的 env(safe-area-inset-*) 处理
+      meta: {
+        viewport: 'width=device-width, initial-scale=1.0, viewport-fit=cover',
+      },
     },
     source: {
       entry: {

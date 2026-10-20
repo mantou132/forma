@@ -41,7 +41,7 @@
 - `pnpm -r test`：各作模型与关卡测试。
 - `pnpm run lint`：Biome + 各包 `tsc --noEmit`。
 - `cargo check`：Rust Workspace 检查（需要先 build 前端产物）。
-- `pnpm tauri:<game> dev`、`pnpm tauri:<game> ios dev`：原生联调（仓库有多个 Tauri 应用，脚本用 `TAURI_APP_PATH` 指定）；生成图标：`pnpm tauri:<game> icon <1024.png> -o crates/<game>/icons`。
+- `pnpm tauri:<game> dev`、`pnpm tauri:<game> ios dev`：原生联调（仓库有多个 Tauri 应用，脚本用 `TAURI_APP_PATH` 指定，并用 `CARGO_TARGET_DIR=target/<game>` 隔离：tauri 的 build script 只在首次构建时生成 Android `TauriActivity.kt`，共享 target 会让其他作缺失该文件；两者都用 `$PWD` 绝对路径，因为 `ios run --open` 打开的 Xcode 会继承这些变量并在 `gen/apple` 中执行 `xcode-script`）；生成图标：`pnpm tauri:<game> icon <1024.png> --ios-color '#0b0c14'`（不要加 `-o`，否则不会写入 `gen/apple`、`gen/android`；`ios init` / `android init` 重建 `gen/` 后需重跑；同时更新启动屏图标 `gen/apple/Assets.xcassets/LaunchIcon.imageset`，即 80pt@3x 圆角版）。启动屏（同 agentdeck）：iOS `gen/apple/LaunchScreen.storyboard`（底色 `#0b0c14` + 居中 80pt `LaunchIcon`）；Android `res/*/launch_*`、基础主题 `windowBackground`、Manifest 中的 `Theme.forma_<game>.Launch`，`MainActivity.kt` 控制系统启动屏延迟 500ms 退出。全屏：移动端用 `tauri-plugin-edge-to-edge`（注入 `--safe-area-inset-*`，core 样式以 `env()` 兜底）；Android 隐藏系统栏写在 `gen/android/.../MainActivity.kt`，iOS 状态栏由 `gen/apple/project.yml` 的 `UIStatusBarHidden` 隐藏；`android init` / `ios init` 后需恢复 `gen/` 中的改动。
 
 # 依赖版本
 

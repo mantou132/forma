@@ -17,3 +17,4 @@
 
 - 新增定理卡只在 `cards.ts` 追加，已有 ID 不得改动（存档按 ID 记录）。
 - 跨作品共享卡片目前只在同源存储内生效；不同 App 之间需要 App Group / iCloud 容器，尚未实现。
+- 字标字体 `styles/noto-serif-sc-mark.woff2` 是 Noto Serif SC（wght 300–400）的子集，只含 `font-mark` 用到的字（形 + `SERIES` 各作 `zh`）；新增这类字时用 fonttools 重新生成：`fonttools varLib.instancer NotoSerifSC[wght].ttf wght=300:400 -o i.ttf && pyftsubset i.ttf --text='形铺影时结锥晶四…' --flavor=woff2 --layout-features='' --no-hinting --desubroutinize`。
